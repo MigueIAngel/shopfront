@@ -9,6 +9,8 @@
 
 An e-commerce storefront built with **React 19** and **TypeScript**. It has a product catalog with filters, a persistent cart and wishlist, and a validated checkout flow. The UI is available in English and Spanish. Product data comes from the public [DummyJSON](https://dummyjson.com/docs/products) API.
 
+**Live demo:** https://migueiangel.github.io/shopfront/
+
 ![Catalog](docs/catalog.jpg)
 
 ## Features
@@ -33,7 +35,7 @@ An e-commerce storefront built with **React 19** and **TypeScript**. It has a pr
 | Forms | react-hook-form, zod 4 |
 | i18n | i18next, react-i18next |
 | Testing | Vitest, Testing Library (14 tests) |
-| Tooling | Vite 8, oxlint, GitHub Actions, Vercel config |
+| Tooling | Vite 8, oxlint, GitHub Actions, GitHub Pages / Vercel |
 
 ## Getting started
 
