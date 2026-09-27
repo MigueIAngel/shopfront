@@ -1,0 +1,84 @@
+{
+  "nav": { "shop": "Shop", "wishlist": "Wishlist", "cart": "Cart", "language": "Language" },
+  "hero": {
+    "eyebrow": "New season",
+    "title": "Everyday things, thoughtfully picked.",
+    "subtitle": "Browse 190+ products across beauty, home, tech and more."
+  },
+  "catalog": {
+    "search": "Search products…",
+    "allCategories": "All categories",
+    "sort": "Sort by",
+    "sorts": { "featured": "Featured", "price-asc": "Price: low to high", "price-desc": "Price: high to low", "rating": "Top rated" },
+    "results_one": "{{count}} product",
+    "results_other": "{{count}} products",
+    "empty": "No products match your search.",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {{page}} of {{pages}}"
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "added": "Added!",
+    "outOfStock": "Out of stock",
+    "inStock": "{{count}} in stock",
+    "lowStock": "Only {{count}} left",
+    "brand": "Brand",
+    "category": "Category",
+    "back": "Back to shop",
+    "notFound": "Product not found",
+    "addToWishlist": "Add to wishlist",
+    "removeFromWishlist": "Remove from wishlist",
+    "off": "-{{percent}}%"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "continue": "Continue shopping",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "freeShippingHint": "Add {{amount}} more for free shipping",
+    "tax": "Tax (8%)",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "close": "Close cart"
+  },
+  "wishlist": { "title": "Wishlist", "empty": "You have not saved any products yet." },
+  "checkout": {
+    "title": "Checkout",
+    "contact": "Contact",
+    "shippingAddress": "Shipping address",
+    "payment": "Payment",
+    "email": "Email",
+    "fullName": "Full name",
+    "address": "Address",
+    "city": "City",
+    "postalCode": "Postal code",
+    "country": "Country",
+    "cardNumber": "Card number",
+    "expiry": "Expiry (MM/YY)",
+    "cvc": "CVC",
+    "demoNotice": "This is a demo: no real payment is processed. Use 4242 4242 4242 4242.",
+    "placeOrder": "Place order · {{total}}",
+    "processing": "Processing…",
+    "summary": "Order summary",
+    "errors": {
+      "required": "Required",
+      "email": "Enter a valid email",
+      "card": "Enter a valid 16-digit card number",
+      "expiry": "Use the MM/YY format with a future date",
+      "cvc": "3 or 4 digits",
+      "postal": "Enter a valid postal code"
+    }
+  },
+  "order": {
+    "title": "Thank you for your order!",
+    "number": "Order number",
+    "confirmation": "A confirmation was sent to {{email}}.",
+    "backToShop": "Back to the shop"
+  },
+  "footer": { "note": "Demo store built with React. Product data from DummyJSON." }
+}
