@@ -1,0 +1,84 @@
+{
+  "nav": { "shop": "Tienda", "wishlist": "Favoritos", "cart": "Carrito", "language": "Idioma" },
+  "hero": {
+    "eyebrow": "Nueva temporada",
+    "title": "Cosas de todos los días, elegidas con cuidado.",
+    "subtitle": "Explora más de 190 productos de belleza, hogar, tecnología y más."
+  },
+  "catalog": {
+    "search": "Buscar productos…",
+    "allCategories": "Todas las categorías",
+    "sort": "Ordenar por",
+    "sorts": { "featured": "Destacados", "price-asc": "Precio: menor a mayor", "price-desc": "Precio: mayor a menor", "rating": "Mejor valorados" },
+    "results_one": "{{count}} producto",
+    "results_other": "{{count}} productos",
+    "empty": "Ningún producto coincide con tu búsqueda.",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "page": "Página {{page}} de {{pages}}"
+  },
+  "product": {
+    "addToCart": "Añadir al carrito",
+    "added": "¡Añadido!",
+    "outOfStock": "Agotado",
+    "inStock": "{{count}} disponibles",
+    "lowStock": "Solo quedan {{count}}",
+    "brand": "Marca",
+    "category": "Categoría",
+    "back": "Volver a la tienda",
+    "notFound": "Producto no encontrado",
+    "addToWishlist": "Añadir a favoritos",
+    "removeFromWishlist": "Quitar de favoritos",
+    "off": "-{{percent}}%"
+  },
+  "cart": {
+    "title": "Tu carrito",
+    "empty": "Tu carrito está vacío.",
+    "continue": "Seguir comprando",
+    "subtotal": "Subtotal",
+    "shipping": "Envío",
+    "free": "Gratis",
+    "freeShippingHint": "Añade {{amount}} más para envío gratis",
+    "tax": "Impuestos (8%)",
+    "total": "Total",
+    "checkout": "Finalizar compra",
+    "remove": "Eliminar",
+    "quantity": "Cantidad",
+    "close": "Cerrar carrito"
+  },
+  "wishlist": { "title": "Favoritos", "empty": "Aún no has guardado productos." },
+  "checkout": {
+    "title": "Finalizar compra",
+    "contact": "Contacto",
+    "shippingAddress": "Dirección de envío",
+    "payment": "Pago",
+    "email": "Correo electrónico",
+    "fullName": "Nombre completo",
+    "address": "Dirección",
+    "city": "Ciudad",
+    "postalCode": "Código postal",
+    "country": "País",
+    "cardNumber": "Número de tarjeta",
+    "expiry": "Vencimiento (MM/AA)",
+    "cvc": "CVC",
+    "demoNotice": "Esto es una demo: no se procesa ningún pago real. Usa 4242 4242 4242 4242.",
+    "placeOrder": "Realizar pedido · {{total}}",
+    "processing": "Procesando…",
+    "summary": "Resumen del pedido",
+    "errors": {
+      "required": "Obligatorio",
+      "email": "Introduce un correo válido",
+      "card": "Introduce una tarjeta válida de 16 dígitos",
+      "expiry": "Usa el formato MM/AA con una fecha futura",
+      "cvc": "3 o 4 dígitos",
+      "postal": "Introduce un código postal válido"
+    }
+  },
+  "order": {
+    "title": "¡Gracias por tu pedido!",
+    "number": "Número de pedido",
+    "confirmation": "Enviamos una confirmación a {{email}}.",
+    "backToShop": "Volver a la tienda"
+  },
+  "footer": { "note": "Tienda demo hecha con React. Datos de productos de DummyJSON." }
+}
