@@ -25,7 +25,7 @@ export function Layout({ headerActions }: { headerActions?: React.ReactNode }) {
       <header className="sticky top-0 z-30 border-b border-stone-200 bg-cream/85 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
           <Link to="/" className="flex items-center gap-2 font-display text-2xl">
-            <img src="/favicon.svg" alt="" className="h-8 w-8" />
+            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="h-8 w-8" />
             Shopfront
           </Link>
           <nav className="flex items-center gap-3 text-sm font-medium">
