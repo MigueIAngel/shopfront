@@ -39,5 +39,17 @@ export function fetchProducts(query: CatalogQuery, signal?: AbortSignal): Promis
 export const fetchProduct = (id: number, signal?: AbortSignal) =>
   request<Product>(`/products/${id}`, signal)
 
-export const fetchCategories = (signal?: AbortSignal) =>
-  request<Category[]>('/products/categories', signal)
+const toName = (slug: string) =>
+  slug
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
+
+/**
+ * Uses the lightweight `category-list` endpoint (plain slugs). Some ad blockers
+ * block requests whose path ends in `/categories`, which left the filter empty.
+ */
+export async function fetchCategories(signal?: AbortSignal): Promise<Category[]> {
+  const slugs = await request<string[]>('/products/category-list', signal)
+  return slugs.map((slug) => ({ slug, name: toName(slug) }))
+}
