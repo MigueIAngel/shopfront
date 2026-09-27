@@ -5,6 +5,8 @@ import { CartButton, CartDrawer } from './components/CartDrawer'
 import { Layout } from './components/Layout'
 import { AddToCartButton, WishlistButton } from './components/ProductActions'
 import { CatalogPage } from './pages/CatalogPage'
+import { CheckoutPage } from './pages/CheckoutPage'
+import { OrderPage } from './pages/OrderPage'
 import { ProductPage } from './pages/ProductPage'
 import { WishlistPage } from './pages/WishlistPage'
 import { useWishlist } from './store/wishlist'
@@ -44,6 +46,8 @@ export default function App() {
           <Route index element={<CatalogPage renderActions={cardActions} />} />
           <Route path="/products/:id" element={<ProductPage renderActions={detailActions} />} />
           <Route path="/wishlist" element={<WishlistPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/order/:orderId" element={<OrderPage />} />
         </Route>
       </Routes>
       <CartDrawer />
