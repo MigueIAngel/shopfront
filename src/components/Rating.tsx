@@ -1,11 +1,12 @@
 export function Rating({ value }: { value: number }) {
-  const rounded = Math.round(value * 2) / 2
+  const percent = Math.max(0, Math.min(100, (value / 5) * 100))
   return (
-    <span className="inline-flex items-center gap-1 text-xs text-stone-500" aria-label={`${value.toFixed(1)} / 5`}>
-      <span className="text-amber-500" aria-hidden>
-        {'★'.repeat(Math.floor(rounded))}
-        {rounded % 1 ? '⯪' : ''}
-        <span className="text-stone-300">{'★'.repeat(5 - Math.ceil(rounded))}</span>
+    <span className="inline-flex items-center gap-1.5 text-xs text-stone-500" aria-label={`${value.toFixed(1)} / 5`}>
+      <span className="relative inline-block leading-none tracking-tight" aria-hidden>
+        <span className="text-stone-300">★★★★★</span>
+        <span className="absolute inset-0 overflow-hidden text-amber-500" style={{ width: `${percent}%` }}>
+          ★★★★★
+        </span>
       </span>
       {value.toFixed(1)}
     </span>
