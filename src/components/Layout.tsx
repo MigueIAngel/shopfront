@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Link, NavLink, Outlet } from 'react-router'
+import { ScrollToTop } from './ScrollToTop'
 
 export function LanguageSwitcher() {
   const { i18n, t } = useTranslation()
@@ -20,6 +21,7 @@ export function Layout({ headerActions }: { headerActions?: React.ReactNode }) {
   const { t } = useTranslation()
   return (
     <div className="flex min-h-screen flex-col">
+      <ScrollToTop />
       <header className="sticky top-0 z-30 border-b border-stone-200 bg-cream/85 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
           <Link to="/" className="flex items-center gap-2 font-display text-2xl">
